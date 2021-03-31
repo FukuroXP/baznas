@@ -18,3 +18,19 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/table', function () {
+    return view('bruh.index');
+});
+
+Route::get('/pdfo', function () {
+    return view('bruh.pdfobject');
+});
+
+Route::get('/mpdf', function () {
+    return view('bruh.mpdf');
+});
+
+Route::get('/embed', function () {
+    return view('bruh.embed');
+});
